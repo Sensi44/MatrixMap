@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(55,55,55,0.15);
+}
+
+.aob-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .aob__header {
+    line-height: 18px;
+    font-size: 12px;
+    background-color: darkgrey;
+    padding-left: 16px;
+  }
+
+  .aob__main-content {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+
+    .aob__battleField {
+      width: 100%;
+      padding: 10px;
+
+      #canvas {
+        border: 1px solid gray;
+        border-radius: 3px;
+        background-color: rgba(225,225,225);
+      }
+    }
+  }
+}
